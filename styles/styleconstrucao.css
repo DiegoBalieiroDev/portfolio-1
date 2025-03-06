@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --cor-primaria: #543310;
+    --cor-secundaria: #AF8F6F;
+    --cor-terciaria: #F8F4E1;
+    --cor-hover: #74512D;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+
+CSS
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    min-height: 100vh;
+}
+
+.pagina_construcao {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-primaria);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 50px;
+    border-radius: 10px;
+    font-family: var(--fonte-primaria);
+    max-width: 48.25rem;
+    width: 35%;
+    margin: auto;
+}
+
+.box_h1 {
+    margin-bottom: 20px;
+}
+
+.rodape_construcao {
+    position: fixed;
+    justify-content: flex-end;
+    text-align: center;
+    width: 100%;
+    align-items: flex-end;
+    bottom: 0;
+    background-color: var(--cor-terciaria);
+    padding: 23px;
+    font-family: var(--fonte-secundaria);
+}
+
+@media screen and (max-width:928px) {
+    .container {
+        font-size: 14px ;
+    }
+}
+
+@media screen and (max-width:808px) {
+    .container {
+        font-size: 13px ;
+    }
+}
+
+@media screen and (max-width:752px) {
+    .container {
+        font-size: 11px ;
+    }
+}
+
+@media (max-width:483px) {
+    .box_h1 {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:361px) {
+    .box_h1 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 9px;
+    }
+}
